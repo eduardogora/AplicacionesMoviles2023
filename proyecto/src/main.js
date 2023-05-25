@@ -31,13 +31,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD-qQDoLe8dxi9zcPZw-hXDyA9XAEAWquI",
-  authDomain: "practicalogin-30a2c.firebaseapp.com",
-  databaseURL: "https://practicalogin-30a2c-default-rtdb.firebaseio.com",
-  projectId: "practicalogin-30a2c",
-  storageBucket: "practicalogin-30a2c.appspot.com",
-  messagingSenderId: "86035441408",
-  appId: "1:86035441408:web:22f86af525b656d799f5e5"
+  apiKey: "AIzaSyD4bXeUaHOJot1COc9IKLDd2mJL3ODJl2U",
+  authDomain: "finalmoviles-6c3be.firebaseapp.com",
+  databaseURL: "https://finalmoviles-6c3be-default-rtdb.firebaseio.com",
+  projectId: "finalmoviles-6c3be",
+  storageBucket: "finalmoviles-6c3be.appspot.com",
+  messagingSenderId: "676907702724",
+  appId: "1:676907702724:web:3477f23849a75669662c91"
 };
 
 // Initialize Firebase

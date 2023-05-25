@@ -88,7 +88,7 @@ export default defineComponent({
       var errores = 0;
       for (i = 0; i < this.claves; i++) {
         push(ref(db, "claves/"), {
-          status: "",
+          status: "libre",
           usuario: "",
         })
           .then(async () => {
