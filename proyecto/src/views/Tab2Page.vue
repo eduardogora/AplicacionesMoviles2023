@@ -9,24 +9,30 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <div>Usuario</div>
+            <div>Nombre</div>
           </ion-col>
           <ion-col>
-            <div>Claves</div>
+            <div>Apellido</div>
           </ion-col>
           <ion-col>
-            <div>Status</div>
+            <div>Carrera</div>
+          </ion-col>
+          <ion-col>
+            <div>Semestre</div>
           </ion-col>
         </ion-row>
         <ion-row v-for="(item, index) in listaClaves" :key="index">
           <ion-col>
-            <div>{{listaKeys[index]}}</div>
-          </ion-col>
-          <ion-col>
             <div>{{item.nombre}}</div>
           </ion-col>
           <ion-col>
-            <div>{{item.status}}</div>
+            <div>{{item.apellidos}}</div>
+          </ion-col>
+          <ion-col>
+            <div>{{item.carrera}}</div>
+          </ion-col>
+          <ion-col>
+            <div>{{item.semestre}}</div>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -60,7 +66,7 @@ export default {
   },
   mounted() {
     const db = getDatabase();
-    const starCountRef = ref(db, "claves/");
+    const starCountRef = ref(db, "usuario/");
     onValue(starCountRef, (snapshot) => {
       const data = snapshot.val();
       console.log(data);
@@ -75,7 +81,7 @@ export default {
   },
   data() {
     return {
-      listaClaves: [{ status: "", usuario: "" }],
+      listaClaves: [{ nombre: "", usuario: "" }],
       listaKeys: [],
     };
   },
@@ -88,5 +94,6 @@ ion-col > div {
   background-color: #f23333;
   border: solid 1px #ddd;
   padding: 10px;
+  text-align: center;
 }
 </style>
