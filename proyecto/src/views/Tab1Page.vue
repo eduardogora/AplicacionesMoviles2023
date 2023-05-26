@@ -12,18 +12,12 @@
             <div>Clave</div>
           </ion-col>
           <ion-col>
-            <div>Usuario</div>
-          </ion-col>
-          <ion-col>
             <div>Status</div>
           </ion-col>
         </ion-row>
         <ion-row v-for="(item, index) in listaClaves" :key="index">
           <ion-col>
             <div>{{listaKeys[index]}}</div>
-          </ion-col>
-          <ion-col>
-            <div>{{item.usuario}}</div>
           </ion-col>
           <ion-col>
             <div>{{item.status}}</div>
